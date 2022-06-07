@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Drop Down</title>
+        <script>
+            var states={
+                Gujarat:["Ahemdabad","Bhavnagar","Surat"],
+                Maharashtra:["Mumbai","Pune","Thane"],
+                Rajasthan:["Jaipur","Jodhpur","Jesalmer"]
+            }
+            function submenu(value){
+                var s=document.getelementbyid("state");
+                var c=document.getElementById("city");
+                alert(s+"\n"+c);
+                if(value.length==0)
+                {
+                    document.getElementById("city").innerHTML="<option></option>";
+                }
+                else
+                {
+                    for(cityid in states[value])
+                    {
+                        
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <select onchange="submenu(this.value)" id="state">
+            <option>Gujarat</option>
+            <option>Maharashtra</option>
+            <option>Rajasthan</option>
+        </select>
+        <select id="city">
+            <option></option>
+        </select>
+    </body>
+</html>

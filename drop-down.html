@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>auto select drop down list</title>
+    </head>
+    
+    <body>
+    
+        <select onchange="pikachu()" id="list">
+            <option>Gujarat</option>
+            <option>Maharashtra</option>
+            <option>Rajasthan</option>
+        </select>
+        <script>
+        function pikachu()
+        {
+            if(document.getElementById("list").value=="Gujarat")
+            {
+                "<select><option>mitul</option> <option>karan</option></select>"
+            }
+            else if(document.getElementById("list").value=="Maharashtra")
+            {
+                "<select><option>kano</option> <option>vaibhav</option></select>"
+            }
+            else
+            {
+                alert("Jaipur,Jodhpur,Kota");
+            }
+        }
+        </script>
+    </body>
+</html>
