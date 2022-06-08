@@ -10,20 +10,31 @@
             <option>Maharashtra</option>
             <option>Rajasthan</option>
         </select>
+        <select>
+            <option id="city1"></option>
+            <option id="city2"></option>
+            <option id="city3"></option>
+        </select>
         <script>
         function pikachu()
         {
             if(document.getElementById("list").value=="Gujarat")
             {
-                "<select><option>mitul</option> <option>karan</option></select>"
+                document.getElementById("city1").innerHTML="Ahmedabad";
+                document.getElementById("city2").innerHTML="Bhavnagar";
+                document.getElementById("city3").innerHTML="Rajkot";
             }
             else if(document.getElementById("list").value=="Maharashtra")
             {
-                "<select><option>kano</option> <option>vaibhav</option></select>"
+                document.getElementById("city1").innerHTML="Mumbai";
+                document.getElementById("city2").innerHTML="Pune";
+                document.getElementById("city3").innerHTML="Thane";
             }
             else
             {
-                alert("Jaipur,Jodhpur,Kota");
+                document.getElementById("city1").innerHTML="Jaipur";
+                document.getElementById("city2").innerHTML="Jodhpur";
+                document.getElementById("city3").innerHTML="Kota";
             }
         }
         </script>
